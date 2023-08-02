@@ -53,10 +53,10 @@ header {
 }
 
 .nav li {
-    display: inline-block;
+    float:right;
+    display: block;
     justify-content: space-between;
     padding: 22px;
-    justify-content: right;
     font-weight: 500;
 }
 
