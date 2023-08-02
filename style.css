@@ -16,7 +16,7 @@ html {
 
 }
 ::-webkit-scrollbar-thumb {
-    background: #73dfff;
+    background: #73d5ff;
     border-radius: 10px;
     width: 8px;
     height: 2px;
@@ -26,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    background-color: #121212;
+    background-color: #202020;
     font-family: Poppins,sans-serif;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 .nav li a:hover {
-    color: #73dfff;
+    color: #73d5ff;
     letter-spacing: 2px;
     text-shadow: #fff;
 }
@@ -111,7 +111,7 @@ header {
     right: 1rem;
     margin-top: 80px;
     width: 200px;
-    background-color: #73dfff;
+    background-color: #73d5ff;
 }
 
 .nav_dropdown li {
@@ -121,7 +121,7 @@ header {
 
 .nav_dropdown li a {
     text-decoration: none;
-    color: #121212;
+    color: #202020;
     font-weight: bold;
     transition-duration: 0.3s;
 }
@@ -164,7 +164,7 @@ header {
 }
 
 .card h2 {
-    color: rgb(172, 248, 176)
+    color: #c6ffc6
 }
 
 .card:hover {
