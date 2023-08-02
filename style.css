@@ -144,4 +144,41 @@ header {
     .nav {
         display: none;
     }
+}#cards {
+    justify-content: center;
+    align-items: center;
+    text-align: center
 }
+
+.card {
+    margin: 30px;
+    width: 25%;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    display: inline-block;
+    flex: auto
+}
+
+.card h2 {
+    color: rgb(172, 248, 176)
+}
+
+.card:hover {
+    background-color: #313131;
+    color: #fff;
+    transition: all .6s ease 0s
+}
+@media (max-width: 709px) {
+    .card {
+        width:70%;
+        font-size: 14px
+    }
+
+    .card-pog {
+        width: 70%;
+        font-size: 14px
+    }}
