@@ -180,8 +180,9 @@ header {
 .abt_img{
     float: left;
     margin: 40px;
-    
+
 }
+
 
 @media (max-width: 710px) {
     .card {
@@ -192,7 +193,12 @@ header {
     .card-pog {
         width: 70%;
         font-size: 14px
-    }}
+    }
+    .abt_img{
+        width: 100%;
+        height: auto;
+    }    
+}
 
     
 
