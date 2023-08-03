@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
@@ -73,5 +74,28 @@
 
 
     </script>
-</body>menda eos maxime voluptatibus error facere similique voluptates
+     <button onclick="topFunction()" id="top" title="Go to top"><i data-feather="chevron-up" class="up"></i></button>
+     <script>
+       feather.replace()
+     </script>
+     <script>
+       mybutton = document.getElementById("top");
+     
+     
+     window.onscroll = function() {scrollFunction()};
+     
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+       } else {
+         mybutton.style.display = "none";
+       }
+     }
+     
+     function topFunction() {
+       document.body.scrollTop = 0; 
+       document.documentElement.scrollTop = 0; 
+     }
+     </script>
+</body>
                    
