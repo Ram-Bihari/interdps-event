@@ -20,3 +20,5 @@ Human Rights Violations: The fast fashion industry relies heavily on cheap labou
 The Impact of Fast Fashion on Garment Workers
 
 Economic Impact: Fast fashion has a negative impact on the local economy, particularly in developing countries like India. The industry is dominated by a few large multinational corporations that have a monopoly on the market. These corporations often dictate the terms of trade, leading to unfair wages and working conditions for workers.
+
+ Buy less. choose well. make it last. by viviene westwood
