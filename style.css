@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -16,7 +17,7 @@ html {
 
 }
 ::-webkit-scrollbar-thumb {
-    background: #73d5ff;
+    background: #c6ffc6;
     border-radius: 10px;
     width: 8px;
     height: 2px;
@@ -37,6 +38,7 @@ header {
 }
 
 .nav {
+    float: right;
     display: flex;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -44,6 +46,8 @@ header {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+    margin-right: 20px;
+    margin-top: 25px;
 }
 
 .nav a {
@@ -73,7 +77,7 @@ header {
 }
 
 .nav li a:hover {
-    color: #73d5ff;
+    color: #c6ffc6;
     letter-spacing: 2px;
     text-shadow: #fff;
 }
@@ -89,7 +93,7 @@ header {
 
 #main {
     width: 100%;
-    height: 1920px;
+    height: 100%;
 }
 
 #second {
@@ -98,17 +102,16 @@ header {
 }
 
 
-#hamburger {
+/* #hamburger {
     padding-top: 57px;
     padding-right: 30px;
     display: none;
     cursor: pointer;
-}
+} */
 
-.nav_dropdown {
+/* .nav_dropdown {
     display: none;
     position: absolute;
-    right: 1rem;
     margin-top: 80px;
     width: 200px;
     background-color: #73d5ff;
@@ -130,7 +133,7 @@ header {
     color: #fff;
     letter-spacing: 2px;
 
-}
+} */
 
 @media (max-width: 1050px) {
     #hamburger {
@@ -144,7 +147,9 @@ header {
     .nav {
         display: none;
     }
-}#cards {
+
+}
+#cards {
     justify-content: center;
     align-items: center;
     text-align: center
@@ -152,7 +157,7 @@ header {
 
 .card {
     margin: 30px;
-    width: 25%;
+    width: 60%;
     border-radius: 20px;
     color: #fff;
     font-weight: 900;
@@ -160,19 +165,20 @@ header {
     align-items: center;
     padding: 20px;
     display: inline-block;
-    flex: auto
+    flex: auto;
+    -webkit-box-shadow: -4px 0px 51px 22px rgba(198,255,198,1);
+-moz-box-shadow: -4px 0px 51px 22px rgba(198,255,198,1);
+box-shadow: -4px 0px 51px 22px rgba(198,255,198,1);
+    
 }
+
 
 .card h2 {
     color: #c6ffc6
 }
 
-.card:hover {
-    background-color: #313131;
-    color: #fff;
-    transition: all .6s ease 0s
-}
-@media (max-width: 709px) {
+
+@media (max-width: 710px) {
     .card {
         width:70%;
         font-size: 14px
@@ -182,3 +188,41 @@ header {
         width: 70%;
         font-size: 14px
     }}
+
+    
+
+
+#homepageTITLE {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+#viewMoreHomePage {
+    color: #202020;
+    font-weight: bold;
+    background-color: #c6ffc6;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+#viewMoreHomePage:hover {
+    background-color: #202020;
+    color: #c6ffc6;
+}
+
+i {
+    margin-top: 200px;
+    padding-bottom: 180px;
+}
+
+i:Hover {
+    color: #202020;
+}
