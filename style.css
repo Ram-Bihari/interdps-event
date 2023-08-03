@@ -41,13 +41,11 @@ header {
     float: right;
     display: flex;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-    margin-right: 20px;
-    margin-top: 25px;
+}
+
+#hamburger {
+    display: none;
+
 }
 
 .nav a {
@@ -101,15 +99,7 @@ header {
     height: 1920px;
 }
 
-
-/* #hamburger {
-    padding-top: 57px;
-    padding-right: 30px;
-    display: none;
-    cursor: pointer;
-} */
-
-/* .nav_dropdown {
+ .nav_dropdown {
     display: none;
     position: absolute;
     margin-top: 80px;
@@ -123,6 +113,7 @@ header {
 }
 
 .nav_dropdown li a {
+    display: none;
     text-decoration: none;
     color: #202020;
     font-weight: bold;
@@ -133,22 +124,11 @@ header {
     color: #fff;
     letter-spacing: 2px;
 
-} */
-
-@media (max-width: 1050px) {
-    #hamburger {
-        display: inline-block;
-    }
-
-    .nav_dropdown {
-        display: inline-block;
-    }
-
-    .nav {
-        display: none;
-    }
-
 }
+
+
+
+
 #cards {
     justify-content: right;
     align-items: right;
@@ -209,7 +189,8 @@ header {
     letter-spacing: 2px;
     text-align: center;
     padding-top: 125px;
-    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 #viewMoreHomePage {
@@ -218,7 +199,7 @@ header {
     background-color: #c6ffc6;
     margin: 20px;
     padding: 15px;
-    border-radius: 20%;
+    /* border-radius: 20%; */
     transition-duration: 0.4s;
     cursor: pointer;
     
@@ -227,11 +208,6 @@ header {
 #viewMoreHomePage:hover {
     background-color: #202020;
     color: #c6ffc6;
-}
-
-i {
-    margin-top: 175px;
-    padding-bottom: 180px;
 }
 
 i:Hover {
@@ -325,4 +301,41 @@ i:Hover {
 }
 .abt{
     float: right;
+}
+
+
+#hamburger {
+    padding: 60px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1200px) {
+    #homepageTITLE {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 555px) {
+    #homepageTITLE {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #hamburger {
+        display: block;
+    }
+
+    .nav_dropdown {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    #homepageTITLE {
+        padding-top: 0;
+    }
+
 }
