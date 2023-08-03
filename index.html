@@ -48,11 +48,13 @@
     </section>
  
     <section id="second">                                       
-        
+        <img src="abt.jpg" class="abt_img">
             <div id="cards">
                 <div class="card">
+                    
                     <h2>About Fast Fashion</h2>
-                    <p>A business strategy known as "fast fashion" focuses on producing clothes quickly and affordably to keep up 
+                
+                    <p class="abt">A business strategy known as "fast fashion" focuses on producing clothes quickly and affordably to keep up 
                         with shifting fashion trends. It is dependent on a global network of suppliers and manufacturers who 
                         create inexpensive clothing that is then offered for sale at a discount. Every few weeks, fashionable 
                         clothing is intended to be offered to customers in an effort to increase their purchasing. The ideas of
@@ -65,7 +67,76 @@
 
             </div>
     </section>
+    <section id="gallery">
+    
+        <div class="slideshow-container">
 
+            <div class="mySlides fade">
+              
+              <img src="1.jpg" style="width:100%;">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="2.jpg" style="width:100%">
+             
+            </div>
+            
+            <div class="mySlides fade">
+             
+              <img src="3.jpg" style="width:100%; ">
+              
+            </div>
+            
+            <div class="mySlides fade">
+             
+              <img src="4.jpg" style="width:100%; ">
+              
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+                
+    </section>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         particlesJS.load("particles-js", "particles.json", function () {
