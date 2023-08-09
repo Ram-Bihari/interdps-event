@@ -32,11 +32,12 @@ header {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
+    
 }
 
 .navlinks {
-    
+   
     float: right;
     display: flex;
     list-style-type: disc;
@@ -76,11 +77,11 @@ header {
     color: #fff;
 }
 
-.navlinks li a:hover {
+/* .navlinks li a:hover {
     color: #c6ffc6;
     letter-spacing: 2px;
     text-shadow: #fff;
-}
+} */
 
 svg {
     z-index: -1;
@@ -91,7 +92,32 @@ svg {
     position: relative;
 }
 
+  .left {
+   
+    font-size: 31px;
+    
+    position: relative;
+  }
+  a.left:before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 3px;
+ 
+  bottom: 0;
+  left: -2px;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0px;
   
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 105%;
+  align-items: center;
+}
   .navlinks input[type=text] {
     padding: 10px;
     margin-top: 15px;
@@ -243,7 +269,7 @@ form {
     color:#fff;
     transition:all .6s ease 0s
 }
-@media (max-width:509px){
+@media (max-width:709px){
     .card{
         width: 50%;
         font-size:10px
