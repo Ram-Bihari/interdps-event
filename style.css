@@ -68,7 +68,7 @@ header {
     padding-left: 30px;
     word-spacing: 2px;
     color: white;
-    padding-top: 6px;
+    padding-top: 13px;
 }
 
 .navlinks li a {
@@ -213,9 +213,13 @@ form {
     }
 }
 #cards{
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    text-align:center
+    text-align:center;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+
 }
 .card{
     margin:20px;
@@ -226,18 +230,29 @@ form {
     text-align:center;
     align-items:center;
     padding:20px;
-    display:inline-block;
-    display:flex;
+    /* display:inline-block;
+    flex:auto; */
     background-color: #001220;
+    
 }
 .card h2{
     color:#FA7268
-} 
+}
 .card:hover{
     background-color:#313131;
     color:#fff;
     transition:all .6s ease 0s
 }
+@media (max-width:509px){
+    .card{
+        width: 50%;
+        font-size:10px
+        
+    }
+#cards{
+    justify-content:space-between;
+}}
+    
 
 #gallery {
     line-height:0;
@@ -268,7 +283,7 @@ form {
     #gallery {
      -moz-column-count:    3;
      -webkit-column-count: 3;
-     column-count:         3;
+     column-count: 3;
     }
  }
 
@@ -278,7 +293,7 @@ form {
     #gallery {
      -moz-column-count:    2;
      -webkit-column-count: 2;
-     column-count:         2;
+     column-count:2;
     }
  }
 
@@ -286,6 +301,6 @@ form {
     #gallery {
      -moz-column-count:    1;
      -webkit-column-count: 1;
-     column-count:         1;
+     column-count:1;
     }
  }
