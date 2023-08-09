@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">  
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <section id="main">
@@ -20,14 +21,14 @@
             <div class="text-container">
                 <header>
                     <h1 id="headerTitle">
-                      Fashion <span style="color: #FA7268">Waste</span>
+                      Fashion <span style="color: #001200">Waste</span>
                     </h1>
                     <center>
                         <ul class="navlinks">
                             <li><a href="#" class="left">Home</a></li>
                             <li><a href="#second" class="left">About</a></li>
                             <li><a href="#faq" class="left">FAQS</a></li>
-                            <li><a href="./impact.html" class="left">Impact</a></li>
+                            <li><a href="impact.html" class="left">Impact</a></li>
                             <div class="search-container">
                                 <form>
                                   <input type="text" placeholder="Search.." name="search">
@@ -53,6 +54,7 @@
         <center>
              <div id="cards">
         <div class="card">
+
           <i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
           <h2>What is fast fashion and fashion waste?</h2>
           <p>
@@ -66,26 +68,66 @@
           <p>
             Fast fashion and excessive consumption make fashion waste worse, contributing to resource depletion, waste pollution, greenhouse gas emissions, and landfill waste.
 
+
+          <h2>
+            <i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
+            What is fashion waste and fast fashion?
+          </h2>
+          <p>
+            Fashion waste includes wasted clothing, accessories, and textiles, all of which contribute to environmental and societal challenges. Fast fashion is the rapid production of low-cost clothing collections, which frequently results in low-quality products that are abandoned. Both contribute to the waste of fashion.
           </p>
         </div>
              <div id="cards">
         <div class="card">
-          <h2>HTML</h2>
+          <h2><i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
+            Why is fashion waste a problem?</h2>
           <p>
-            Lopx ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa
-            assumenda eos maxime voluptatibus error facere similique voluptates
-            vel laudantium?
+            Because of fast fashion and excessive consumption, fashion waste contributes to environmental challenges such as landfill waste, resource depletion, water pollution, and greenhouse gas emissions.
+>>>>>>> ec3004ed7f1711efa164674df79311c62b878c9b
           </p>
         </div>
              <div id="cards">
         <div class="card">
-          <h2>HTML</h2>
+          <h2>
+            <i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
+            How can consumers make a difference in reducing fashion waste?
+          </h2>
           <p>
-            Lopx ipsum dolor sit, amet consectetur adipisicing elit. Quas ipsa
-            assumenda eos maxime voluptatibus error facere similique voluptates
-            vel laudantium?
+            Consumers may help the environment by practicing thoughtful buying, repairing clothing, extending the lifespan of garments, and supporting circular fashion initiatives.
           </p>
         </div>
+             <div id="cards">
+        <div class="card">
+          <h2>
+            <i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
+            How can the fashion industry address fashion waste?
+          </h2>
+          <p>
+            The fashion industry can reduce fashion waste by prioritizing sustainable production processes, implementing circular business models, investing in eco-friendly material research and development, and encouraging transparency throughout the supply chain.
+
+          </p>
+        </div>
+        <div class="card">
+          <h2>
+            <i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
+            What is the role of recycling in reducing fashion waste?
+          </h2>
+          <p>
+            Recycling textiles involves converting old clothing into fibers for new products, which is difficult due to complicated fabric blends and insufficient infrastructure.
+
+          </p>
+        </div>
+        <div class="card">
+          <h2>
+            <i class="fa-regular fa-circle-question fa-beat" style="color: #fa7268;"></i>
+            Are there sustainable alternatives to fast fashion?
+          </h2>
+          <p>
+            Yes, shopping from ethical and ecologically conscious labels, selecting timeless and durable pieces, participating in clothes swaps, and exploring second-hand and vintage shops are all examples of sustainable fashion possibilities.
+
+          </p>
+        </div>
+        </div></div></div></div>
         </center>
        </section>
        <section id="galleryOMZ">
@@ -100,6 +142,32 @@
          
          </div>
        </section>
+       <button onclick="topFunction()" id="top" title="Go to top"><i data-feather="chevron-up" class="up"></i></button>
+       <script>
+         feather.replace()
+       </script>
+       <script>
+         mybutton = document.getElementById("top");
+       
+       
+       window.onscroll = function() {scrollFunction()};
+       
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       
+       function topFunction() {
+         document.body.scrollTop = 0; 
+         document.documentElement.scrollTop = 0; 
+       }
+       </script>
+       <footer>
+
+       </footer>
 </body>
     
  </html>
